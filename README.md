@@ -1,5 +1,5 @@
 # LDA
-## Steps:
+## Code Steps:
 1. Read the dataset.
 2. Split the dataset into train and test.
 3. Standardize data.
