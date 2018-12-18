@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.metrics import roc_auc_score
 from sklearn import metrics
+from sklearn.metrics import confusion_matrix
 
 
 #READ DATA
@@ -87,5 +88,6 @@ print "AUC: ",auc
 print "Accuracy= ",(score)
 
 
-
-
+#CALCULATE CONFUSION MATRIX
+conf_mat = confusion_matrix(y_test, predections)
+print "Confusion matrix: ", conf_mat
